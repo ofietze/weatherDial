@@ -1,0 +1,42 @@
+{
+  "name": "WeatherDial",
+  "author": "4T2",
+  "version": "1.0.0",
+  "description": "Showing you 5 key data points: time, date, temperature, rain, and daylight — the 5-in-1 shampoo of watchfaces.",
+  "keywords": ["pebble-app", "watchface", "weather"],
+  "private": true,
+  "dependencies": {
+    "pebble-clay": "^1.0.4"
+  },
+  "pebble": {
+    "displayName": "WeatherDial",
+    "uuid": "0be1dbdd-7695-479a-be91-1c426b42895e",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "PAYLOAD_VERSION",
+      "REQUEST",
+      "BASE_TIMESTAMP",
+      "TEMP",
+      "RAIN",
+      "SUNRISE",
+      "SUNSET",
+      "TEMP_MIN",
+      "TEMP_MAX",
+      "RAIN_TOTAL",
+      "THEME",
+      "LATITUDE",
+      "LONGITUDE"
+    ],
+    "capabilities": ["location", "configurable"],
+    "resources": {
+      "media": []
+    }
+  }
+}
